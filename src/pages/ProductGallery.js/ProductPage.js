@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from "../homepage/Navbar";
 import Footer from '../homepage/Footer';
+import { Link } from 'react-router-dom';
 
 const ProductPage = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -63,12 +64,12 @@ const ProductPage = () => {
               alt={product.name}
             />
             <div className="text-white text-xl font-extrabold">{product.name}</div>
-            <a
-              href={product.link}
-              className="self-stretch px-16 pt-4 pb-3 mt-7 text-white whitespace-nowrap bg-black rounded-3xl text-center font-bold text-xl transition-all duration-300 hover:bg-white hover:text-black hover:scale-105"
-            >
-              VIEW
-            </a>
+            <Link
+  to={product.link} // Use 'to' prop for routing
+  className="self-stretch px-16 pt-4 pb-3 mt-7 text-white whitespace-nowrap bg-black rounded-3xl text-center font-bold text-xl transition-all duration-300 hover:bg-white hover:text-black hover:scale-105"
+>
+  VIEW
+</Link>
           </div>
         ))}
       </div>

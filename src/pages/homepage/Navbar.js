@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Logo from "./Logo";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,10 +27,18 @@ function Navbar() {
         </button>
       </div>
       <div className={`flex-col md:flex md:flex-row ${isOpen ? "flex" : "hidden"} md:items-center md:space-x-8`}>
-        <a href="/" className="py-2 text-black-700 font-bold hover:text-gray-500">Home</a>
-        <a href="/aboutus" className="py-2 text-black-700 font-bold hover:text-gray-500">About</a>
-        <a href="/product" className="py-2 text-black-700 font-bold hover:text-gray-500">Product</a>
-        <a href="/contact" className="py-2 text-black-700 font-bold hover:text-gray-500">Contact</a>
+      <Link to="/" className="py-2 text-black-700 font-bold hover:text-gray-500">
+  Home
+</Link>
+<Link to="/aboutus" className="py-2 text-black-700 font-bold hover:text-gray-500">
+  About
+</Link>
+<Link to="/product" className="py-2 text-black-700 font-bold hover:text-gray-500">
+  Product
+</Link>
+<Link to="/contact" className="py-2 text-black-700 font-bold hover:text-gray-500">
+  Contact
+</Link>
       </div>
     </nav>
   );

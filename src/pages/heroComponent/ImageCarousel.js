@@ -2,6 +2,7 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation, Mousewheel } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
+import { Link } from 'react-router-dom';
 
 function ImageCarousel({ robots, onSlideChange }) {
   return (
@@ -22,17 +23,18 @@ function ImageCarousel({ robots, onSlideChange }) {
       className="w-full"
       onSlideChange={onSlideChange}
     >
-      {robots.map((robot, index) => (
-        <SwiperSlide key={index} className="relative">
-          <a href={robot.url} rel="noopener noreferrer">
-          <img 
-            loading="lazy" 
-            src={robot.imageUrl} 
-            className="object-contain w-full aspect-[0.78] max-md:max-w-full transition-transform duration-300 hover:scale-105" 
-            alt={`3D Mini Robot ${index + 1}`} 
-          />
-          </a>
-        </SwiperSlide>
+
+{robots.map((robot, index) => (
+  <SwiperSlide key={index} className="relative">
+    <Link to={robot.url} rel="noopener noreferrer">
+      <img 
+        loading="lazy" 
+        src={robot.imageUrl} 
+        className="object-contain w-full aspect-[0.78] max-md:max-w-full transition-transform duration-300 hover:scale-105" 
+        alt={`3D Mini Robot ${index + 1}`} 
+      />
+    </Link>
+  </SwiperSlide>
       ))}
       
       <style jsx>{`
