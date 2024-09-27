@@ -2,6 +2,7 @@ import { Canvas } from "@react-three/fiber";
 import { ARButton, XR } from "@react-three/xr";
 import HomeHitModel from "./HitModel";
 import React from "react";
+import img1 from '../../images/Group 22.png';
 
 const HomeModelContainer = () => {
   return (
@@ -12,7 +13,7 @@ const HomeModelContainer = () => {
     requiredFeatures: ["hit-test"],
   }}
 >
-  <img src="/models/Group 22.png" alt="AR Button" className="w-full h-full object-contain" />
+  <img src={img1} alt="AR Button" className="w-full h-full object-contain" />
 </ARButton>
 
       <Canvas
