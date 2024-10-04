@@ -67,15 +67,14 @@ function RobotDisplay() {
       </div>
     );
   }
-
   return (
     <main className={`flex flex-col rounded-xl ${robots[activeSlideIndex].backgroundColor} transition-all duration-500`}>
-
+  
       <section className="px-16 pt-11 pb-5 w-full rounded-3xl max-md:px-5 max-md:max-w-full shadow-lg">
-        <div className="flex gap-5 max-md:flex-col">
+        <div className="flex gap-5 max-md:flex-col max-lg:block max-lg:text-center max-lg:items-center max-lg:justify-center">
         
-          <div className="flex flex-col w-[54%] max-md:ml-0 max-md:w-full">
-            <div className="flex z-10 flex-col mt-24 mr-0 text-white max-md:mt-10 max-md:max-w-full">
+          <div className="flex flex-col w-[54%] max-md:ml-0 max-md:w-full max-lg:w-full max-lg:block max-lg:mx-auto">
+            <div className="flex z-10 flex-col mt-24 mr-0 text-white max-md:mt-10 max-md:max-w-full max-lg:mt-0">
               
               <div className={`transition-opacity duration-500 ${animate ? 'opacity-100' : 'opacity-0'}`}>
                 <RobotInfo 
@@ -83,14 +82,13 @@ function RobotDisplay() {
                   description={robots[activeSlideIndex].description} 
                 />
               </div>
-              <h1 className="mt-16 ml-5 text-5xl font-bold max-md:mt-10 max-md:max-w-full max-md:text-4xl">
+              <h1 className="mt-16 ml-5 text-5xl font-bold max-md:mt-10 max-md:max-w-full max-md:text-4xl max-lg:ml-0 max-lg:mt-5">
                 VIEW OUR 3D MINI ROBOT
               </h1>
             </div>
           </div>
           
-          {/* Right: Image Carousel */}
-          <div className="flex flex-col ml-5 w-[46%] max-md:ml-0 max-md:w-full">
+          <div className="flex flex-col ml-5 w-[46%] max-md:ml-0 max-md:w-full max-lg:w-full max-lg:ml-0 max-lg:mt-10 max-lg:mx-auto">
             <div className="flex flex-col w-full max-md:mt-10 max-md:max-w-full">
               <ImageCarousel robots={robots} onSlideChange={handleSlideChange} />
             </div>
@@ -99,6 +97,8 @@ function RobotDisplay() {
       </section>
     </main>
   );
+  
+  
 }
 
 export default RobotDisplay;

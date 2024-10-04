@@ -67,7 +67,9 @@ const ContactUs = () => {
         </div>
       </div>
     </div>
+    <div className="px-4">
     <Footer />
+    </div>
     </>
   );
 };
