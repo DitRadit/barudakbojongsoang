@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/barudakbojongsoang/static/css/main.f7cbe935.css",
-    "main.js": "/barudakbojongsoang/static/js/main.ccd620c2.js",
+    "main.css": "/barudakbojongsoang/static/css/main.56494d26.css",
+    "main.js": "/barudakbojongsoang/static/js/main.26e57548.js",
     "static/js/453.7cfcc4f6.chunk.js": "/barudakbojongsoang/static/js/453.7cfcc4f6.chunk.js",
     "static/media/baymax.png": "/barudakbojongsoang/static/media/baymax.261b63f0ce2b4ba542e4.png",
     "static/media/png": "/barudakbojongsoang/static/media/51fb457e483d73eeacc3b91.1be7145c367a0b514cd1.png",
@@ -20,12 +20,12 @@
     "static/media/bmo2.png": "/barudakbojongsoang/static/media/bmo2.ca8441b504680b39b256.png",
     "static/media/WhatsApp_Image_2024-09-27_at_15.07.10-removebg-preview.png": "/barudakbojongsoang/static/media/WhatsApp_Image_2024-09-27_at_15.07.10-removebg-preview.7ef6029338c231632ae7.png",
     "index.html": "/barudakbojongsoang/index.html",
-    "main.f7cbe935.css.map": "/barudakbojongsoang/static/css/main.f7cbe935.css.map",
-    "main.ccd620c2.js.map": "/barudakbojongsoang/static/js/main.ccd620c2.js.map",
+    "main.56494d26.css.map": "/barudakbojongsoang/static/css/main.56494d26.css.map",
+    "main.26e57548.js.map": "/barudakbojongsoang/static/js/main.26e57548.js.map",
     "453.7cfcc4f6.chunk.js.map": "/barudakbojongsoang/static/js/453.7cfcc4f6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f7cbe935.css",
-    "static/js/main.ccd620c2.js"
+    "static/css/main.56494d26.css",
+    "static/js/main.26e57548.js"
   ]
 }
